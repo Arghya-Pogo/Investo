@@ -143,6 +143,6 @@ MEDIA_URL = '/public/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
-LOGIN_REDIRECT_URL = 'onboarding'
+LOGIN_REDIRECT_URL = 'profile'
 
-LOGIN_URL = 'onboarding'
+LOGIN_URL = 'login'

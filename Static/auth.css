@@ -6,6 +6,14 @@
     text-decoration: none !important;
 }
 
+a{
+    color: #EE786B;
+}
+
+a:hover{
+    color: #f28c81;
+}
+
 body{
     display: flex;
     width: 100vw;
@@ -94,6 +102,29 @@ body{
     background-color: #f28c81;
 }
 
+.content_box__form{
+    margin: 40px 25px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.content_form__submit{
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #EE786B;
+    transition: 0.2s ease-in-out;
+}
+
+.content_link{
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px){
     .image_box{
         display: none !important;
@@ -101,6 +132,6 @@ body{
 
     .content_box{
         height: 100vh;
-        min-width: 600px !important;
+        min-width: 0 !important;
     }
 }
