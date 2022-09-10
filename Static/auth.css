@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0;
+    text-decoration: none !important;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image_box{
+    flex: 1;
+    background-image: url('https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.content_box{
+    flex: 1;
+    min-width: 570px !important;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.content_box__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 25px 0 25px;
+}
+
+.content_header__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_header__svg_icon{
+    margin: 0 10px;
+}
+
+.content_header__logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #EE786B;
+}
+
+.content_box_container_flex{
+    margin: 0 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_box__lead{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content_box__text{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 550px;
+}
+
+.contet__box__button_box{
+    display: flex;
+    margin-top: 25px;
+}
+
+.link_button{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #EE786B;
+    transition: 0.2s ease-in-out;
+}
+
+.link_button:hover{
+    background-color: #f28c81;
+}
+
+@media only screen and (max-width: 600px){
+    .image_box{
+        display: none !important;
+    }
+
+    .content_box{
+        height: 100vh;
+        min-width: 600px !important;
+    }
+}
