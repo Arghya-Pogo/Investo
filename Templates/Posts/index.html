@@ -27,7 +27,7 @@
 <!-- ----------------- COMMON ----------------- -->
     <nav class="navbar">
         <div class="navlogodiv">
-            <a href="#" class="navlinks">
+            <a href="{% url 'dashboard' %}" class="navlinks">
                 <h1>Investo.</h1>
             </a>
         </div>
@@ -39,12 +39,12 @@
                 </a> 
             </li>
             <li class="listitems"> 
-                <a href="{% url 'profile' %}" style="padding: 8px 18px;" class="navlinks"> 
+                <a href="{% url 'company_search' %}" style="padding: 8px 18px;" class="navlinks"> 
                     <i class="gg-search"></i> <span style="margin-left: 10px;"> Search</span>
                 </a> 
             </li>
             <li class="listitems"> 
-                <a href="{% url 'profile' %}" style="padding: 8px 18px;" class="navlinks"> 
+                <a href="{% url 'dashboard' %}" style="padding: 8px 18px;" class="navlinks"> 
                     <i class="gg-list"></i> <span style="margin-left: 10px;"> News</span>
                 </a> 
             </li>
@@ -95,7 +95,7 @@
             </a>
         </div>
         <div class="part2">
-            <a href="about.html"><span class="material-symbols-outlined">info</span>About us</a>
+            <a href="#"><span class="material-symbols-outlined">info</span>About us</a>
             <a href="#"><span class="material-symbols-outlined">article</span>Blog</a>
             <a href="#"><span class="material-symbols-outlined">support_agent</span>Help & Support</a>
             <a href="#"><span class="material-symbols-outlined">feed </span>Newsletter</a>

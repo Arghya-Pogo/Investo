@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
     #Installed Apps
     'crispy_forms',
-    'djrichtextfield',
+    'django_filters',
 
     #My Apps
     'Authentication.apps.AuthenticationConfig',

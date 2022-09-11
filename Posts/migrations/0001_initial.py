@@ -4,8 +4,6 @@ from django.conf import settings
 from django.db import migrations, models
 import django.db.models.deletion
 import django.utils.timezone
-import djrichtextfield.models
-
 
 class Migration(migrations.Migration):
 
@@ -23,7 +21,7 @@ class Migration(migrations.Migration):
                 ('company_name', models.CharField(max_length=150)),
                 ('company_logo', models.ImageField(default='default_user__image.png', upload_to='profile_pics')),
                 ('company_email', models.EmailField(max_length=254)),
-                ('company_details', djrichtextfield.models.RichTextField()),
+                ('company_details', models.TextField(max_length=254)),
                 ('employes', models.IntegerField()),
                 ('legal_info', models.FileField(blank=True, default=None, null=True, upload_to='legal_info')),
                 ('b_model', models.FileField(blank=True, default=None, null=True, upload_to='b_model')),

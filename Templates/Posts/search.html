@@ -1,0 +1,37 @@
+{% extends 'Posts/index.html' %}
+
+
+{% block content %}
+<form method="get">
+    {{ companies.form.as_p }}
+    <input type="submit" />
+</form>
+    
+    {% for company in companies.qs %}
+        <div class="result_card">
+            <div class="company_logo_name_div">
+                <div class="company_logo_div">
+                    <img src="{{company.company_logo.url}}" alt="Company Logo">
+                </div>
+                <div class="card_top">
+                    <div class="company_name_founding_text">
+                        <p class="company_name">{{company.company_name}}</p>
+                        <p class="founding_year">Founded on {{company.establishment_date}}</p>
+                    </div>
+                    <div class="company_profile_link_div">
+                        <a href="{% url 'company_details' pk=company.id %}" class="company_profile_link"><i class="gg-bulb"></i><span style="margin-left: 10px;">Company Profile</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="company_details_div">
+                <p class="company_details_text"><b>Company Details:</b> {{company.company_description}} </p>
+                <div class="company_iconic_shots">
+                    <p class="iconic_shots"><i class="gg-user"></i>   <span style="margin-left: 10px;">{{company.company_employes}}+</span></p>
+                    <p class="iconic_shots"><i class="gg-dollar"></i>   <span style="margin-left: 10px;">{{company.company_rev}}</span></p>
+                    <p class="iconic_shots"><i class="gg-pin"></i>   <span style="margin-left: 10px;">{{company.company_hq}}</span></p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock content %}
