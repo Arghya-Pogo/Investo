@@ -2,28 +2,32 @@
 
 
 {% block content %}
-    <div class="result_card">
-        <div class="company_logo_name_div">
-            <div class="company_logo_div">
-                <img src="https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png" alt="Company Logo">
-            </div>
-            <div class="card_top">
-                <div class="company_name_founding_text">
-                    <p class="company_name">Tesla</p>
-                    <p class="founding_year">Founded on 1 July 2003</p>
+    
+    {% for company in companies %}
+        <div class="result_card">
+            <div class="company_logo_name_div">
+                <div class="company_logo_div">
+                    <img src="{{company.company_logo.url}}" alt="Company Logo">
                 </div>
-                <div class="company_profile_link_div">
-                    <a href="{% url 'dashboard' %}" class="company_profile_link"><i class="gg-bulb"></i><span style="margin-left: 10px;">Company Profile</span></a>
+                <div class="card_top">
+                    <div class="company_name_founding_text">
+                        <p class="company_name">{{company.company_name}}</p>
+                        <p class="founding_year">Founded on {{company.establishment_date}}</p>
+                    </div>
+                    <div class="company_profile_link_div">
+                        <a href="{% url 'company_details' pk=company.id %}" class="company_profile_link"><i class="gg-bulb"></i><span style="margin-left: 10px;">Company Profile</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="company_details_div">
+                <p class="company_details_text"><b>Company Details:</b> {{company.company_description}} </p>
+                <div class="company_iconic_shots">
+                    <p class="iconic_shots"><i class="gg-user"></i>   <span style="margin-left: 10px;">{{company.company_employes}}+</span></p>
+                    <p class="iconic_shots"><i class="gg-dollar"></i>   <span style="margin-left: 10px;">{{company.company_rev}}</span></p>
+                    <p class="iconic_shots"><i class="gg-pin"></i>   <span style="margin-left: 10px;">{{company.company_hq}}</span></p>
                 </div>
             </div>
         </div>
-        <div class="company_details_div">
-            <p class="company_details_text"><b>Company Details:</b> Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas. Tesla designs and manufactures electric vehicles, battery energy storage from home to grid-scale, solar panels and solar roof tiles, and related products and services. </p>
-            <div class="company_iconic_shots">
-                <p class="iconic_shots"><i class="gg-user"></i>   <span style="margin-left: 10px;">200+</span></p>
-                <p class="iconic_shots"><i class="gg-dollar"></i>   <span style="margin-left: 10px;">10B</span></p>
-                <p class="iconic_shots"><i class="gg-pin"></i>   <span style="margin-left: 10px;">Noida</span></p>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+
 {% endblock content %}
