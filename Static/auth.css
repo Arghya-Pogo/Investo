@@ -7,11 +7,11 @@
 }
 
 a{
-    color: #EE786B;
+    color: #06283d;
 }
 
 a:hover{
-    color: #f28c81;
+    color: #092f47;
 }
 
 body{
@@ -56,7 +56,7 @@ body{
 .content_header__logo{
     font-size: 28px;
     font-weight: 700;
-    color: #EE786B;
+    color: #06283d;
 }
 
 .content_box_container_flex{
@@ -94,12 +94,12 @@ body{
     border-radius: 10px;
     border: none;
     color: #fff;
-    background-color: #EE786B;
+    background-color: #06283d;
     transition: 0.2s ease-in-out;
 }
 
 .link_button:hover{
-    background-color: #f28c81;
+    background-color: #06283d;
 }
 
 .content_box__form{
@@ -117,7 +117,7 @@ body{
     border-radius: 10px;
     border: none;
     color: #fff;
-    background-color: #EE786B;
+    background-color: #06283d;
     transition: 0.2s ease-in-out;
 }
 

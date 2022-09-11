@@ -1,16 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {{user.username}}
+{% extends 'Posts/index.html' %}
 
-    <a href="{% url 'logout' %}">
-        <button class="link_button">Logout</button>
-    </a>
-</body>
-</html>
+
+{% block content %}
+<style>
+    .profile_area_div{
+  flex: 1;
+  /* border: 2px solid black; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 2em 1em;
+  
+}
+.profile_pic_div{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.profile_pic_div img{
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+}
+
+
+.investor_info_text{
+  text-align: center;
+  margin-top: 1em;
+}
+.name_of_investor{
+  font-size: 2em;
+  font-weight: 500;
+
+}
+.profession_text{
+  margin-top: 0.5em;
+  opacity: 0.7;
+
+}
+.details_text{
+  margin-top: 5em;
+  /* font-weight: 600; */
+
+}
+
+</style>
+
+
+<div class="profile_area_div">
+    <div class="profile_pic_div">
+        <img src={{user.profile.image.url}} alt="">
+    </div>
+    <div class="investor_info_text">
+        <h1>{{user.username}}</h1>
+        <h4>{{user.first_name}} {{user.last_name}}</h4>
+        <p class="profession_text m-4">{{user.email}}</p>
+        <p class="profession_text m-4">Angel Investor</p>
+        <p class="details_text">Business Experience of 13+ years. Invested in<strong> 50+ Startups</strong></p>
+    </div>
+</div>
+{% endblock content %}

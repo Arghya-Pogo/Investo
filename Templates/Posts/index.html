@@ -1,0 +1,116 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------------------------- CSS only --------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- --------------------------- CSS Icons --------------------------- -->
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'common.css' %}">
+
+
+
+    <title>Investo | Find your Investor and Startup Here!</title>
+</head>
+
+<body>
+
+<!-- ----------------- COMMON ----------------- -->
+    <nav class="navbar">
+        <div class="navlogodiv">
+            <a href="#" class="navlinks">
+                <h1>Investo.</h1>
+            </a>
+        </div>
+
+        <ul class="nav_middle">
+            <li class="listitems"> 
+                <a href="{% url 'dashboard' %}" style="padding: 8px 18px;" class="navlinks"> 
+                    <i class="gg-home-alt"></i> <span style="margin-left: 10px;"> Home</span>
+                </a> 
+            </li>
+            <li class="listitems"> 
+                <a href="{% url 'profile' %}" style="padding: 8px 18px;" class="navlinks"> 
+                    <i class="gg-search"></i> <span style="margin-left: 10px;"> Search</span>
+                </a> 
+            </li>
+            <li class="listitems"> 
+                <a href="{% url 'profile' %}" style="padding: 8px 18px;" class="navlinks"> 
+                    <i class="gg-list"></i> <span style="margin-left: 10px;"> News</span>
+                </a> 
+            </li>
+            <li class="listitems"> 
+                <a href="{% url 'profile' %}" style="padding: 8px 18px;" class="navlinks"> 
+                    <i class="gg-math-plus"></i> <span style="margin-left: 10px;"> Create Company</span>
+                </a> 
+            </li>
+        </ul>
+
+        <div class="rightsidenav">
+            <a href="{% url 'profile' %}" style="border-radius: 30px; padding: 20px;"  class="navlinks"><i class="gg-bell"></i></a>
+            <a href="{% url 'profile' %}"  style="border-radius: 30px;" class="navlinks"><i class="gg-profile"></i></a>
+        </div>
+    </nav>
+<!-- ----------------- COMMON ----------------- -->
+
+
+
+    <div class="container">
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert m-2 alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+
+        
+        {% block content %}
+            
+        {% endblock content %}
+            
+    </div>
+
+
+<!-- ----------------- FOOTER ----------------- -->
+<footer>
+    <div class="row1">
+        <div class="part1">
+            <a href="{% url 'onboarding' %}" class="investo_logo">
+                <h1 class="text-white">Investo.</h1>
+            </a>
+            <a href="https://github.com/Arghya-Pogo/Investo">
+                <span class="text-white">Github REPO</span>
+            </a>
+        </div>
+        <div class="part2">
+            <a href="about.html"><span class="material-symbols-outlined">info</span>About us</a>
+            <a href="#"><span class="material-symbols-outlined">article</span>Blog</a>
+            <a href="#"><span class="material-symbols-outlined">support_agent</span>Help & Support</a>
+            <a href="#"><span class="material-symbols-outlined">feed </span>Newsletter</a>
+            <a href="contactus.html"><span class="material-symbols-outlined">join</span>Contact Us</a>
+        </div>
+
+    </div>
+
+    <div class="thend">
+
+        <p class="copyright">&copy 2022 Investo, All rights reserved</p>
+        <p class="madeby"><span class="material-symbols-outlined">code</span>with<span class="material-symbols-outlined">favorite</span>by<span class="material-symbols-outlined"> diversity_3</span>Humans</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

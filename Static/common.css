@@ -18,26 +18,26 @@
   'opsz' 48
 }
 
-
 *{
     margin: 0;
-    padding: 0;
+    text-decoration: none !important;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 
 body{
-  font-family: 'Poppins', sans-serif;
-color: var(--darkblue);
-
+  color: var(--darkblue);
 }
 
 /* ----------------- NAVBAR ----------------- */
+
 .navbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 1em 2em;
+  border-bottom: 1px solid #eee;
 }
 
 .material-symbols-rounded{margin-right: 0.1em;} /* To give a gap between nav button icons and text */
@@ -179,7 +179,6 @@ footer .row2{
   justify-content: center;
   align-items: center;
   flex: 1;
-  border-top: 2px white solid;
 }
 .thend p, span{
   display: flex;

@@ -14,11 +14,15 @@
 }
 .profile_pic_div{
   width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .profile_pic_div img{
   border-radius: 100%;
-  width: 100%;
+  width: 180px;
+  height: 180px;
 }
 
 
