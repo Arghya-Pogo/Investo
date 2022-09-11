@@ -8,7 +8,7 @@ from PIL import Image
 class Company(models.Model):
     """Model definition for Company."""
 
-    founder = models.ForeignKey(User, on_delete=models.CASCADE, related_name="company_founder")
+    founder = models.ForeignKey(User, on_delete=models.CASCADE, related_name="company_founder", null=True)
     company_name = models.CharField(null=False, max_length=150, default=None)
     company_logo = models.ImageField(default='default_user__image.png', upload_to='profile_pics')
 
