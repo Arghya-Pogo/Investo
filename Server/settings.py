@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
     #My Apps
     'Authentication.apps.AuthenticationConfig',
-
+    'Posts.app.PostsConfig'
 ]
 
 MIDDLEWARE = [
