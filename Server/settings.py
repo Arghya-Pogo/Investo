@@ -41,10 +41,11 @@ INSTALLED_APPS = [
 
     #Installed Apps
     'crispy_forms',
+    'djrichtextfield',
 
     #My Apps
     'Authentication.apps.AuthenticationConfig',
-    'Posts.app.PostsConfig'
+    'Posts.apps.PostsConfig'
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,15 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'profile'
 
 LOGIN_URL = 'login'
+
+
+DJRICHTEXTFIELD_CONFIG = {
+    'js': ['//cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js'],
+    'init_template': 'djrichtextfield/init/tinymce.js',
+    'settings': {
+        'menubar': False,
+        'plugins': 'link image',
+        'toolbar': 'bold italic | link image | removeformat',
+        'width': 700
+    }
+}
