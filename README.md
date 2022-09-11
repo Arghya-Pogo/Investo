@@ -18,3 +18,12 @@ This webapp is a **Platform for Investors and Founders**, or who are in need of 
 A Startup Finder for Investors, and Pitching Platform for founders and those who are in need of funding. 💸<br>
 A place where investors can find young startups and get all their details to take decision and invest. 🔍 <br>
 There will also be news and updates on the website about recent fundings and all.📰
+
+## How to run the app
+1. Install Python
+2. run command: pip install -r requirements.txt
+3. run command: manage.py makemigrations
+4. run command: manage.py migrate
+5. run command: manage.py createsuperuser
+6. create super user credentials by filling the form
+7. run command: manage.py runserver
