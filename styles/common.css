@@ -1,0 +1,198 @@
+/* COLOR VARIABLES */
+:root {
+  --darkblue: #06283d;
+  --blue: #1363df;
+  --lightblue: #47b5ff;
+  --ultralightblue: #dff6ff;
+}
+::selection{
+  background-color: var(--darkblue);
+  color: white;
+}
+/* MATERIAL ICONS STYLE */
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+color: var(--darkblue);
+
+}
+
+/* ----------------- NAVBAR ----------------- */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 2em;
+}
+
+.material-symbols-rounded{margin-right: 0.1em;} /* To give a gap between nav button icons and text */
+.material-symbols-outlined{margin-right: 0.3em;} /* To give a gap between nav button icons and text */
+
+.navlinks, .iconic_shots{
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  color: var(--darkblue);
+  font-weight: 650;
+}
+
+/* NAVBAR's LOGO PART  */
+.navbar .navlogodiv{
+  width: 10%;
+  border-radius: 1em;
+  
+}
+.navbar .navlogodiv img{
+  border-radius: 1em;
+  padding: 0.7em 0.9em;
+  width: 100%;
+  background-color: var(--darkblue);
+  
+}
+
+
+/* NAVBAR's MIDDLE PART  */
+.navbar .nav_middle li{
+  margin: 0em 1em;
+}
+
+.navbar .nav_middle{
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar .nav_middle .navlinks{
+  border-radius: 1em;
+  padding: 0.5em 0.5em;
+  
+}
+.navbar .nav_middle .navlinks:hover{
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.298);
+  background-color: var(--darkblue);
+  color: white;
+}
+
+/* NAVBAR'S RIGHT PART  */
+.navbar .rightsidenav{
+  display: flex;
+}
+.navbar .rightsidenav .navlinks{
+  border-radius: 100%;
+  padding: 1em 1em;
+  margin: 0em 1em;
+}
+.navbar .rightsidenav .navlinks:hover{
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.298);
+
+
+}
+.current_page{background-color: var(--darkblue);color: white;}
+
+
+
+
+/* ----------------- FOOTER -----------------  */
+footer{
+  min-height: 40vh;
+  background-color: var(--darkblue);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+}
+footer .row1{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  
+}
+footer .row1 .part1{
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+footer .row1 .part1 .investo_logo{
+  width: 30%;
+}
+
+footer .row1 .part1 .investo_logo .investo_logo_img{
+  width: 100%;
+}
+
+footer .row1 .part1 .github_logo{
+  margin-top: 2em;
+  width: 7em;
+}
+
+footer .row1 .part2{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+}
+footer .row1 .part2 a{
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  color: white;
+  margin: 1em 1em;
+  opacity: 0.7;
+}
+footer .row1 .part2 a:hover{
+  opacity: 1;
+
+}
+
+footer .row2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 4em 0em; */
+}
+
+.thend{
+  margin: 3em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-top: 2px white solid;
+}
+.thend p, span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thend span{
+ margin: 0em 0.4em;
+}
+.copyright{
+  margin-top: 1em;
+  
+}
+.madeby{
+  margin-top: 1em;
+}
