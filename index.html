@@ -1,33 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ----------------- COMMON ----------------- -->
     <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/common.css">
+<!-- ----------------- ----------------- -->
+
     <link rel="stylesheet" href="styles/index.css">
     <title>Investo | Find your Investor and Startup Here!</title>
 </head>
+
 <body>
+
+<!-- ----------------- COMMON ----------------- -->
     <nav class="navbar">
-        <div class="navlogo">
-            <img src="media/images/Logo_Transparent_Cropped.png" alt="Investo Logo">
+        <div class="navlogodiv">
+            <a href="#" class="navlinks">
+                <img src="media/images/Logo_Transparent_Cropped.png" alt="Investo Logo">
+            </a>
         </div>
 
-        <ul>
-            <li class="listitems"> <a href="#">Find Startup</a> </li>
-            <li class="listitems"> <a href="#">Companies</a> </li>
-            <li class="listitems"> <a href="#">News</a> </li>
+        <ul class="nav_middle">
+            <li class="listitems"> <a href="#" class="navlinks current_page"> <span class="material-symbols-rounded">query_stats</span>Startups Search</a> </li>
+            <li class="listitems"> <a href="events.html" class="navlinks"> <span class="material-symbols-rounded">diversity_2</span>Events</a> </li>
+            <li class="listitems"> <a href="news.html" class="navlinks"> <span class="material-symbols-rounded">newspaper</span>News</a> </li>
         </ul>
 
         <div class="rightsidenav">
-            <a href=""><img src="media/images/bell.png" alt="User Account Button"></a>
-            <a href=""><img src="media/images/user.png" alt="User Account Button"></a>
+            <a href="#" class="navlinks"><span class="material-symbols-rounded">notifications</span></a>
+            <a href="investor_profile.html" class="navlinks"><span class="material-symbols-rounded">person</span></a>
         </div>
     </nav>
+<!-- ----------------- COMMON ----------------- -->
+
+
+
+    <div class="startup_search_section">
+
+        <!-- ----------------- SEARCH AREA ----------------- -->
+        <div class="search_results_div">
+            <h2>Fund the Next Unicorn!</h2>
+
+            <div class="searchbardiv">
+                <form action="">
+                    <button type="submit"><span class="material-symbols-outlined">search</span></button>
+                    <input type="text" placeholder="Search for Startups" name="Company_Name" id="">
+                </form>
+            </div>
+            <div class="result_cards_area">
+<!-- ----------------- RESULT CARD -----------------  -->
+                <div class="result_card">
+                    <div class="company_logo_name_div">
+                        <div class="company_logo_div">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png" alt="Company Logo">
+                        </div>
+                        <div class="card_top">
+                            <div class="company_name_founding_text">
+                                <p class="company_name">Google</p>
+                                <p class="founding_year">Founded on 4 September 1998</p>
+                            </div>
+                            <div class="company_profile_link_div">
+                                <a href="company_profile.html" class="company_profile_link"><span class="material-symbols-outlined"> tips_and_updates </span>Company Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company_details_div">
+                        <p class="company_details_text"><b>Company Details:</b> 
+                            Google LLC is an American multinational technology company that focuses on search engine technology, online advertising, cloud computing, computer software, quantum computing, e-commerce, artificial intelligence, and consumer electronics.</p>
+                            <div class="company_iconic_shots">
+                                <p class="iconic_shots"><span class="material-symbols-outlined">groups</span>100+</p>
+                                <p class="iconic_shots"><span
+                                    class="material-symbols-outlined">currency_exchange</span>$500K+</p>
+                                    <p class="iconic_shots"><span class="material-symbols-outlined">pin_drop</span>USA</p>
+                                </div>
+                            </div>
+                        </div>
+<!-- ----------------- RESULT CARD -----------------  -->
+<!-- ----------------- RESULT CARD -----------------  -->
+                <div class="result_card">
+                    <div class="company_logo_name_div">
+                        <div class="company_logo_div">
+                            <img src="https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png" alt="Company Logo">
+                        </div>
+                        <div class="card_top">
+                            <div class="company_name_founding_text">
+                                <p class="company_name">Tesla</p>
+                                <p class="founding_year">Founded on 1 July 2003</p>
+                            </div>
+                            <div class="company_profile_link_div">
+                                <a href="company_profile.html" class="company_profile_link"><span class="material-symbols-outlined"> tips_and_updates </span>Company Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company_details_div">
+                        <p class="company_details_text"><b>Company Details:</b> 
+                            Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas. Tesla designs and manufactures electric vehicles, battery energy storage from home to grid-scale, solar panels and solar roof tiles, and related products and services. </p>
+                            <div class="company_iconic_shots">
+                                <p class="iconic_shots"><span class="material-symbols-outlined">groups</span>100+</p>
+                                <p class="iconic_shots"><span
+                                    class="material-symbols-outlined">currency_exchange</span>$500K+</p>
+                                    <p class="iconic_shots"><span class="material-symbols-outlined">pin_drop</span>USA</p>
+                                </div>
+                            </div>
+                        </div>
+<!-- ----------------- RESULT CARD -----------------  -->
+<!-- ----------------- RESULT CARD -----------------  -->
+                <div class="result_card">
+                    <div class="company_logo_name_div">
+                        <div class="company_logo_div">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="Company Logo">
+                        </div>
+                        <div class="card_top">
+                            <div class="company_name_founding_text">
+                                <p class="company_name">Microsoft Corporation</p>
+                                <p class="founding_year">Founded on 4 April 1975</p>
+                            </div>
+                            <div class="company_profile_link_div">
+                                <a href="company_profile.html" class="company_profile_link"><span class="material-symbols-outlined"> tips_and_updates </span>Company Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company_details_div">
+                        <p class="company_details_text"><b>Company Details:</b> 
+                            Microsoft Corporation is an American multinational technology corporation which produces computer software, consumer electronics, personal computers, and related services headquartered at the Microsoft Redmond campus located in Redmond, Washington, United States.</p>
+                            <div class="company_iconic_shots">
+                                <p class="iconic_shots"><span class="material-symbols-outlined">groups</span>100+</p>
+                                <p class="iconic_shots"><span
+                                    class="material-symbols-outlined">currency_exchange</span>$500K+</p>
+                                    <p class="iconic_shots"><span class="material-symbols-outlined">pin_drop</span>USA</p>
+                                </div>
+                            </div>
+                        </div>
+<!-- ----------------- RESULT CARD -----------------  -->
+<!-- ----------------- RESULT CARD -----------------  -->
+                <div class="result_card">
+                    <div class="company_logo_name_div">
+                        <div class="company_logo_div">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png?w=360" alt="Company Logo">
+                        </div>
+                        <div class="card_top">
+                            <div class="company_name_founding_text">
+                                <p class="company_name">GitHub</p>
+                                <p class="founding_year">Founded in 2008</p>
+                            </div>
+                            <div class="company_profile_link_div">
+                                <a href="company_profile.html" class="company_profile_link"><span class="material-symbols-outlined"> tips_and_updates </span>Company Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company_details_div">
+                        <p class="company_details_text"><b>Company Details:</b> 
+                            GitHub, Inc., is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.</p>
+                            <div class="company_iconic_shots">
+                                <p class="iconic_shots"><span class="material-symbols-outlined">groups</span>100+</p>
+                                <p class="iconic_shots"><span
+                                    class="material-symbols-outlined">currency_exchange</span>$500K+</p>
+                                    <p class="iconic_shots"><span class="material-symbols-outlined">pin_drop</span>USA</p>
+                                </div>
+                            </div>
+                        </div>
+<!-- ----------------- RESULT CARD -----------------  -->
+<!-- ----------------- RESULT CARD -----------------  -->
+                <div class="result_card">
+                    <div class="company_logo_name_div">
+                        <div class="company_logo_div">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png" alt="Company Logo">
+                        </div>
+                        <div class="card_top">
+                            <div class="company_name_founding_text">
+                                <p class="company_name">Zomato</p>
+                                <p class="founding_year">Founded in July 2008</p>
+                            </div>
+                            <div class="company_profile_link_div">
+                                <a href="company_profile.html" class="company_profile_link"><span class="material-symbols-outlined"> tips_and_updates </span>Company Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company_details_div">
+                        <p class="company_details_text"><b>Company Details:</b> 
+                            Zomato is an Indian multinational restaurant aggregator and food delivery company founded by Deepinder Goyal and Pankaj Chaddah in 2008. Zomato provides information, menus and user-reviews of restaurants as well as food delivery options from partner restaurants in select cities.</p>
+                            <div class="company_iconic_shots">
+                                <p class="iconic_shots"><span class="material-symbols-outlined">groups</span>100+</p>
+                                <p class="iconic_shots"><span
+                                    class="material-symbols-outlined">currency_exchange</span>$500K+</p>
+                                    <p class="iconic_shots"><span class="material-symbols-outlined">pin_drop</span>INDIA</p>
+                                </div>
+                            </div>
+                        </div>
+<!-- ----------------- RESULT CARD -----------------  -->
+
+
+            </div>
+
+        </div>
+                <!-- ----------------- Filters ----------------- -->
+        <div class="filter_div">
+            <h2>Filters</h2>
+            <form action="">
+                <input type="checkbox" value="Bro" id="soemthing"><span> Filter</span> <br>
+                <input type="checkbox" value="Bro" id="soemthing"><span> Filter</span> <br>
+                <input type="checkbox" value="Bro" id="soemthing"><span> Filter</span> <br>
+                <input type="checkbox" value="Bro" id="soemthing"><span> Filter</span> <br>
+            </form>
+            <ul class="Filters_UL">
+                <li>Filter 1</li>
+                <li>Filter 2</li>
+                <li>Filter 3</li>
+                <li>Filter 4</li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+
+<!-- ----------------- FOOTER ----------------- -->
+<footer>
+    <div class="row1">
+        <div class="part1">
+            <a href="index.html" class="investo_logo"><img src="media/images/Logo_Transparent_Cropped.png" alt="Logo" class="investo_logo_img"></a>
+            <a href="https://github.com/Arghya-Pogo/Investo"><img src="media/images/GitHub_Logo_White.png" alt="GitHub Repo Link" class="github_logo"></a>
+        </div>
+        <div class="part2">
+            <a href="about.html"><span class="material-symbols-outlined">info</span>About us</a>
+            <a href="#"><span class="material-symbols-outlined">article</span>Blog</a>
+            <a href="#"><span class="material-symbols-outlined">support_agent</span>Help & Support</a>
+            <a href="#"><span class="material-symbols-outlined">feed </span>Newsletter</a>
+            <a href="contactus.html"><span class="material-symbols-outlined">join</span>Contact Us</a>
+        </div>
+
+    </div>
+    <div class="row2">
+        <div class="thend">
     
+            <p class="copyright">&copy 2022 Investo, All rights reserved</p>
+            <p class="madeby"><span class="material-symbols-outlined">code</span>with<span class="material-symbols-outlined">favorite</span>by<span class="material-symbols-outlined"> diversity_3</span>Humans</p>
+        </div>
+
+    </div>    
+</footer>
+
 </body>
+
 </html>
